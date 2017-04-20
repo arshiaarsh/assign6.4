@@ -1,0 +1,23 @@
+public class NegativeAgeException extends Exception
+{
+
+		public static void main(String s[]) throws Exception
+    {
+        int age = getAge();
+        if (age < 0)
+        {
+            throw new NegativeAgeException();
+        }
+        else
+        {
+
+          System.out.println("Age entered is " + age);
+        }
+    }
+
+    static int getAge()
+    {
+       return -10;
+    }
+}
+	
